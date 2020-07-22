@@ -87,7 +87,7 @@ footer {
 }
 
 .leading {
-  background: url("../../img/main-bg.jpg") center center no-repeat;
+  background: url("../img/main-bg.jpg") center center no-repeat;
   background-size: cover;
 }
 
