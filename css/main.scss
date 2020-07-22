@@ -1,0 +1,26 @@
+$orange: #e45028;
+$yellow: #f9b43b;
+$black: #2f3234;
+$red: #e35028;
+
+
+// normalize
+
+@import "./base/Normalize.css";
+
+
+// common
+
+@import "./blocks/common/buttons.scss";
+@import "./blocks/common/through-title.scss";
+
+
+// additions
+
+@import "./base/layout.scss";
+
+
+// blocks
+
+@import "./blocks/leading.scss";
+

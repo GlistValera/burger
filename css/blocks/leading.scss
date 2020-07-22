@@ -1,0 +1,71 @@
+.leading {
+    background: url('../../img/main-bg.jpg') center center no-repeat;  //уточнить путь с картинке
+    background-size: cover;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    margin-right: 15px;
+}
+
+.nav__list {
+    display: flex;
+}
+
+.nav__link {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    text-transform: uppercase;
+
+    &:after {
+        content: "";
+        display: block;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background: #fff;
+        margin: 0 16px;
+    }
+
+}
+
+.nav__item {
+    &:last-child {
+        .nav__link:after {
+            display: none;
+        }
+    }
+}
+
+
+.header__buttons {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.leading__content {
+    flex: .8;
+    display: flex;
+    align-items: center;
+}
+
+.leading__pic-img {
+    display: block;
+    min-width: 100%;
+}
+
+.leading__description {
+    font-size: 65px;
+}
+
+.leading__text {
+    color: #fff;
+}
