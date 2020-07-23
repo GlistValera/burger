@@ -1,3 +1,23 @@
+$black: #2f3234;
+$yellow: #f9b43b;
+
 .through-title {
     font-size: 72px;
+    color: $yellow;
+    
+    &_color {
+        &_black {
+            color: $black;
+        }  
+    }
+
+    &_align {
+        &_center {
+            text-align: center;
+        }
+    }
+
+    &_margin {
+        margin-bottom: 40px;
+    }
 }

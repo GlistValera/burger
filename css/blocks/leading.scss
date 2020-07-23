@@ -1,5 +1,5 @@
 .leading {
-    background: url('../../img/main-bg.jpg') center center no-repeat;  //уточнить путь с картинке
+    background: url('../img/main-bg.jpg') center center no-repeat; 
     background-size: cover;
 }
 
@@ -59,7 +59,7 @@
 
 .leading__pic-img {
     display: block;
-    min-width: 100%;
+    max-width: 100%;
 }
 
 .leading__description {
@@ -68,4 +68,12 @@
 
 .leading__text {
     color: #fff;
+}
+
+.container__leading {
+    flex: .8;
+}
+
+.through-title {
+    
 }

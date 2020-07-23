@@ -12,6 +12,16 @@
 
 .through-title {
   font-size: 72px;
+  color: #f9b43b;
+}
+.through-title_color_black {
+  color: #2f3234;
+}
+.through-title_align_center {
+  text-align: center;
+}
+.through-title_margin {
+  margin-bottom: 40px;
 }
 
 html,
@@ -85,9 +95,14 @@ footer {
   height: 100vh;
   min-width: 650px;
 }
+.section_vertical_center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 .leading {
-  background: url("../../img/main-bg.jpg") center center no-repeat;
+  background: url("../img/main-bg.jpg") center center no-repeat;
   background-size: cover;
 }
 
@@ -140,7 +155,7 @@ footer {
 
 .leading__pic-img {
   display: block;
-  min-width: 100%;
+  max-width: 100%;
 }
 
 .leading__description {
@@ -149,5 +164,40 @@ footer {
 
 .leading__text {
   color: #fff;
+}
+
+.container__leading {
+  flex: 0.8;
+}
+
+.best {
+  background: url("../img/best-bg.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.best__list {
+  display: flex;
+}
+
+.best__item {
+  text-align: center;
+  width: 300px;
+  margin-right: 40px;
+}
+.best__item:last-child {
+  margin-right: 0;
+}
+
+.best__title {
+  margin-top: 40px;
+  margin-bottom: 25px;
+}
+
+.best__title {
+  font-size: 25px;
+}
+
+.best__desription {
+  font-size: 14px;
 }
 /*# sourceMappingURL=main.css.map */
