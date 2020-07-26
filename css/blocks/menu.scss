@@ -1,0 +1,31 @@
+.menu {
+    background: url('../img/menu-bg.jpg') center center no-repeat;
+    background-size: cover;
+    color: #fff;
+    position: relative;
+}
+
+.menu__list {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    transform: rotate(-90deg);
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.menu__item-trigger {
+    color: #fff;
+    text-decoration: none;
+}
+
+.trigger__content {
+    display: none;
+}
+
+.menu__item-text {
+    font-size: 40px;
+}

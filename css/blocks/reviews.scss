@@ -1,0 +1,44 @@
+.reviews__list {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.reviews__item {
+    width: 25%;
+    height: 50%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    position: relative;
+
+    &:hover {
+        .reviews__hover {
+            opacity: 1;
+            transition: .3s;
+        }
+    }
+}
+
+.reviews__hover {
+    opacity: 0;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(#454545, .7);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.reviews__hover-text {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+

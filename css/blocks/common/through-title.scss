@@ -20,4 +20,15 @@ $yellow: #f9b43b;
     &_margin {
         margin-bottom: 40px;
     }
+
+    &_color {
+        &_white {
+            color: #fff;
+        }
+    }
+
+    &_lineheight {
+        line-height: 1em;
+        margin-bottom: 50px;
+    }
 }
