@@ -391,4 +391,77 @@ footer {
 .menu__item-text {
   font-size: 40px;
 }
+
+.delivery {
+  background: url("../img/delivery-bg.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.form__row {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.delivery__form-left {
+  width: 50%;
+}
+
+.form__block {
+  flex: 1;
+  margin-right: 20px;
+}
+.form__block:last-child {
+  margin-right: 0;
+}
+
+.form__block-title {
+  color: #fff;
+}
+
+.form__input {
+  border-radius: 5px;
+  padding: 5px;
+  width: 100%;
+}
+
+.form__list {
+  color: #fff;
+  display: flex;
+}
+
+.form__item-hidden {
+  display: none;
+}
+
+.form__item-label {
+  display: flex;
+}
+
+.form__item-styling {
+  align-items: center;
+  justify-content: center;
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-radius: 50%;
+  position: relative;
+}
+.form__item-styling:before {
+  display: block;
+  position: absolute;
+  content: "";
+  background: #e35028;
+  width: 7px;
+  height: 7px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  opacity: 0;
+  transition: 0.1s;
+}
+
+.form__item-hidden:checked + .form__item-styling {
+  opacity: 1;
+}
 /*# sourceMappingURL=main.css.map */
