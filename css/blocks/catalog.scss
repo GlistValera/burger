@@ -24,11 +24,106 @@ $red: #e35028;
 .container-catalog {
     flex-direction: row;
     align-items: center;
+    position: relative;
+    padding: 20px;
+
+    @include tablets {
+        flex-direction: column;
+        justify-content: center;
+        width: 95%;
+    }
+}
+
+.arrow {
+
+    &__left {
+        position: absolute;
+        display: block;
+        width: 20px;
+        height: 20px;
+        top: 50%;
+        left: -1%;
+        content: "";
+        border-top: 1px solid transparent;
+        border-right: 1px solid transparent;
+        border-bottom: 2px solid #fff;
+        border-left: 2px solid #fff;
+        transform: rotate(45deg);
+
+        @include tablets {
+            left: 4%;
+        }
+    }
+
+    &__right {
+        position: absolute;
+        display: block;
+        width: 20px;
+        height: 20px;
+        top: 50%;
+        left: 97%;
+        content: "";
+        border-top: 1px solid transparent;
+        border-right: 1px solid transparent;
+        border-bottom: 2px solid #fff;
+        border-left: 2px solid #fff;
+        transform: rotate(-135deg);
+    }
+    
+}
+
+.catalog__picture,
+.catalog__content {
+    width: 50%;
+    
+    @include tablets {
+        width: 80%;
+    }
+}
+
+.catalog__picture {
+    
+    @include tablets {    
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
+
+.catalog__picture-icon {
+      
+    @include tablets {
+        display: flex;
+        max-width: 100%;
+        justify-content: center;
+    }
+}
+
+.catalog__content {
+
+    @include tablets {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.catalog__content-description {
+    font-size: rem(14px);
+
+    @include tablets {
+        width: 90%;
+    }
 }
 
 .catalog__content-price {
     display: flex;
     align-items: baseline;
+
+    @include tablets {
+        justify-content: center;
+    }
 }
 
 .price__numeral {

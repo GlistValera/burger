@@ -10,6 +10,10 @@
 
 .nav {
     margin-right: rem(15px);
+
+    @include tablets {
+        display: none;
+    }
 }
 
 .nav__list {
@@ -51,10 +55,44 @@
     margin-left: auto;
 }
 
+.burger__menu {
+    display: none;
+
+    @include tablets {
+        display: block;
+    }
+}
+
+.burger__menu-trigger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.burger__menu-stick {
+    content: "";
+    background: #fff;
+    width: 24px;
+    height: 4px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    margin-left: 30px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
 .leading__content {
     flex: .8;
     display: flex;
     align-items: center;
+
+    @include tablets {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 .leading__pic-img {
@@ -73,5 +111,20 @@
 .container__leading {
     flex: .8;
     height: 100%;
+}
+
+.arrow-down {
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 20px;
+    top: 10%;
+    left: 50%;
+    content: "";
+    border-top: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-bottom: 2px solid #fff;
+    border-left: 2px solid #fff;
+    transform: rotate(-45deg);
 }
 

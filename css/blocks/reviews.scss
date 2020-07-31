@@ -19,6 +19,11 @@
             transition: .3s;
         }
     }
+
+    @include tablets {
+        width: 50%;
+        height: 25%;
+    }
 }
 
 .reviews__hover {

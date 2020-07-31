@@ -1,6 +1,19 @@
 $black: #2f3234;
 $yellow: #f9b43b;
 
+
+@mixin tablets {
+    @media screen and (max-width: $tablets) {
+        @content;
+    }
+} 
+
+@mixin phones {
+    @media screen and (max-width: $phones) {
+        @content;
+    }
+}
+
 .through-title {
     font-size: 4.5rem;
     color: $yellow;
@@ -15,12 +28,12 @@ $yellow: #f9b43b;
         &_center {
             display: flex;
             justify-content: center;
-            margin-bottom: rem(45px);
+            margin-bottom: 45px;
         }
     }
 
     &_margin {
-        margin-bottom: rem(40px);
+        margin-bottom: 40px;
     }
 
     &_color {
@@ -31,6 +44,10 @@ $yellow: #f9b43b;
 
     &_lineheight {
         line-height: 1em;
-        margin-bottom: rem(50px);
+        margin-bottom: 50px;
+
+        @include tablets {
+            width: 50%;
+        }
     }
 }
