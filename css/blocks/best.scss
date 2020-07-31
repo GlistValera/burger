@@ -12,8 +12,8 @@ $black: #2f3234;
 
 .best__item {
     text-align: center;
-    width: 300px;
-    margin-right: 40px;
+    width: rem(300px);
+    margin-right: rem(40px);
 
     &:last-child {
         margin-right: 0;
@@ -21,16 +21,16 @@ $black: #2f3234;
 }
 
 .best__title {
-    margin-top: 40px;
-    margin-bottom: 25px;
+    margin-top: rem(40px);
+    margin-bottom: rem(25px);
 }
 
 .best__title {
-    font-size: 25px;
+    font-size: rem(25px);
 }
 
 .best__desription {
-    font-size: 14px;
+    font-size: rem(14px);
 
 }
 

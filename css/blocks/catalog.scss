@@ -9,13 +9,13 @@ $red: #e35028;
 
 .composition {
     background: #f08c33;
-    padding: 10px 20px;
+    padding: rem(10px) rem(20px);
     display: flex;
     flex-direction: column;
     align-items: start;
-    width: 90px;
+    width: rem(90px);
     // height: 90px;
-    border-radius: 5px;
+    border-radius: rem(5px);
     color: #fff;
     text-decoration: none;
     // margin-top: 90px;
@@ -32,12 +32,17 @@ $red: #e35028;
 }
 
 .price__numeral {
-    font-size: 72px;
+    font-size: rem(72px);
     color: $red;
 }
 
 .price__text {
-    margin-right: 30px;
-    margin-left: 10px;
+    margin-right: rem(30px);
+    margin-left: rem(10px);
     color: $red;
+}
+
+.burger-pic {
+    display: block;
+    max-width: 100%;
 }

@@ -4,6 +4,13 @@ $black: #2f3234;
 $red: #e35028;
 
 
+
+// resolutions
+
+$tablets: 798px;
+$phones: 480px;
+
+
 // normalize
 
 @import "./base/Normalize.css";
@@ -13,6 +20,7 @@ $red: #e35028;
 
 @import "./blocks/common/buttons.scss";
 @import "./blocks/common/through-title.scss";
+@import "./base/media.scss";
 
 
 // additions
@@ -20,7 +28,7 @@ $red: #e35028;
 @import "./base/layout.scss";
 
 
-// blocks
+// section
 
 @import "./blocks/leading.scss";
 @import "./blocks/best.scss";

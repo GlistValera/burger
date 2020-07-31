@@ -9,7 +9,7 @@
 }
 
 .nav {
-    margin-right: 15px;
+    margin-right: rem(15px);
 }
 
 .nav__list {
@@ -21,17 +21,17 @@
     text-decoration: none;
     display: flex;
     align-items: center;
-    font-size: 13px;
+    font-size: rem(13px);
     text-transform: uppercase;
 
     &:after {
         content: "";
         display: block;
-        width: 4px;
-        height: 4px;
+        width: rem(4px);
+        height: rem(4px);
         border-radius: 50%;
         background: #fff;
-        margin: 0 16px;
+        margin: 0 rem(16px);
     }
 
 }
@@ -63,7 +63,7 @@
 }
 
 .leading__description {
-    font-size: 65px;
+    font-size: rem(65px);
 }
 
 .leading__text {
@@ -75,6 +75,3 @@
     height: 100%;
 }
 
-// .through-title {
-    
-// }

@@ -14,7 +14,7 @@
 }
 
 .through-title {
-  font-size: 72px;
+  font-size: 4.5rem;
   color: #f9b43b;
 }
 .through-title_color_black {
@@ -23,17 +23,31 @@
 .through-title_align_center {
   display: flex;
   justify-content: center;
-  margin-bottom: 45px;
+  margin-bottom: rem(45px);
 }
 .through-title_margin {
-  margin-bottom: 40px;
+  margin-bottom: rem(40px);
 }
 .through-title_color_white {
   color: #fff;
 }
 .through-title_lineheight {
   line-height: 1em;
-  margin-bottom: 50px;
+  margin-bottom: rem(50px);
+}
+
+html {
+  font-size: 16px;
+}
+@media screen and (max-width: 798px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
 }
 
 html,
@@ -42,7 +56,7 @@ body {
 }
 
 body {
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.42;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -52,7 +66,7 @@ body {
 .container {
   margin: 0 auto;
   position: relative;
-  max-width: 940px;
+  max-width: 58.75rem;
   width: 95%;
   display: flex;
   flex-direction: column;
@@ -61,7 +75,6 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-  min-width: 960px;
   min-height: 100%;
   overflow: hidden;
 }
@@ -105,7 +118,7 @@ footer {
 
 .section {
   height: 100vh;
-  min-width: 650px;
+  min-width: 40.625rem;
 }
 .section_vertical_center {
   display: flex;
@@ -124,7 +137,7 @@ footer {
 }
 
 .nav {
-  margin-right: 15px;
+  margin-right: 0.9375rem;
 }
 
 .nav__list {
@@ -136,17 +149,17 @@ footer {
   text-decoration: none;
   display: flex;
   align-items: center;
-  font-size: 13px;
+  font-size: 0.8125rem;
   text-transform: uppercase;
 }
 .nav__link:after {
   content: "";
   display: block;
-  width: 4px;
-  height: 4px;
+  width: 0.25rem;
+  height: 0.25rem;
   border-radius: 50%;
   background: #fff;
-  margin: 0 16px;
+  margin: 0 1rem;
 }
 
 .nav__item:last-child .nav__link:after {
@@ -171,7 +184,7 @@ footer {
 }
 
 .leading__description {
-  font-size: 65px;
+  font-size: 4.0625rem;
 }
 
 .leading__text {
@@ -194,24 +207,24 @@ footer {
 
 .best__item {
   text-align: center;
-  width: 300px;
-  margin-right: 40px;
+  width: 18.75rem;
+  margin-right: 2.5rem;
 }
 .best__item:last-child {
   margin-right: 0;
 }
 
 .best__title {
-  margin-top: 40px;
-  margin-bottom: 25px;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5625rem;
 }
 
 .best__title {
-  font-size: 25px;
+  font-size: 1.5625rem;
 }
 
 .best__desription {
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .catalog {
@@ -223,12 +236,12 @@ footer {
 
 .composition {
   background: #f08c33;
-  padding: 10px 20px;
+  padding: 0.625rem 1.25rem;
   display: flex;
   flex-direction: column;
   align-items: start;
-  width: 90px;
-  border-radius: 5px;
+  width: 5.625rem;
+  border-radius: 0.3125rem;
   color: #fff;
   text-decoration: none;
 }
@@ -244,14 +257,19 @@ footer {
 }
 
 .price__numeral {
-  font-size: 72px;
+  font-size: 4.5rem;
   color: #e35028;
 }
 
 .price__text {
-  margin-right: 30px;
-  margin-left: 10px;
+  margin-right: 1.875rem;
+  margin-left: 0.625rem;
   color: #e35028;
+}
+
+.burger-pic {
+  display: block;
+  max-width: 100%;
 }
 
 .team {
@@ -267,7 +285,7 @@ footer {
   bottom: 0;
   width: 50%;
   background: rgba(47, 50, 52, 0.93);
-  padding-left: 70px;
+  padding-left: 4.375rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -282,10 +300,10 @@ footer {
   content: "";
   height: 0;
   width: 0;
-  border: 9px solid transparent;
+  border: 0.5625rem solid transparent;
   border-top-color: #f9b43b;
   border-bottom-width: 0px;
-  margin-right: 10px;
+  margin-right: 0.625rem;
 }
 
 .team-trigger__content {
@@ -294,8 +312,8 @@ footer {
 
 .trigger__content-pic {
   background: url("../img/team-avatar.jpg") center center no-repeat;
-  width: 100px;
-  height: 100px;
+  width: 6.25rem;
+  height: 6.25rem;
   border-radius: 50%;
 }
 
@@ -311,17 +329,17 @@ footer {
 }
 .team__item_active .team-trigger__content {
   display: flex;
-  margin-top: 20px;
-  margin-bottom: 40px;
-  margin-left: 17px;
+  margin-top: 1.25rem;
+  margin-bottom: 2.5rem;
+  margin-left: 1.0625rem;
 }
 
 .content-text__title {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .trigger__content-text {
-  margin-left: 20px;
+  margin-left: 1.25rem;
   color: #fff;
 }
 
@@ -361,9 +379,9 @@ footer {
 }
 
 .reviews__hover-text {
-  margin-top: 30px;
-  margin-bottom: 20px;
-  margin-left: 20px;
+  margin-top: 1.875rem;
+  margin-bottom: 1.25rem;
+  margin-left: 1.25rem;
 }
 
 .menu {
@@ -395,7 +413,7 @@ footer {
 }
 
 .menu__item-text {
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 
 .contaier__delivery {
@@ -554,7 +572,7 @@ footer {
 
 .through-title_align {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
 }
 
 .map {
@@ -567,7 +585,7 @@ footer {
 .footer {
   background: black;
   color: #fff;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .container__footer {
@@ -584,7 +602,7 @@ footer {
   color: #e35028;
 }
 .footer__phone-number {
-  margin-left: 10px;
+  margin-left: 0.625rem;
 }
 
 .footer__social-list {
@@ -601,14 +619,14 @@ footer {
 
 .footer__social-link {
   background: url("../img/sprite-social.png");
-  width: 25px;
-  height: 25px;
+  width: 1.5625rem;
+  height: 1.5625rem;
   display: block;
 }
 
 .footer__social-link_vk {
   background-position: 0 0;
-  height: 13px;
+  height: 0.8125rem;
 }
 .footer__social-link_vk:hover {
   background-position: 0 bottom;
@@ -616,26 +634,26 @@ footer {
 
 .footer__social-link_fb {
   background-position: -50px 0;
-  height: 20px;
-  width: 20px;
+  height: 1.25rem;
+  width: 1.25rem;
 }
 .footer__social-link_fb:hover {
-  background-position: -50px bottom;
+  background-position: -3.125rem bottom;
 }
 
 .footer__social-link_inst {
-  background-position: -100px 0;
-  height: 20px;
-  width: 20px;
+  background-position: -6.25rem 0;
+  height: 1.25rem;
+  width: 1.25rem;
 }
 .footer__social-link_inst:hover {
   background-position: 0 bottom;
 }
 
 .footer__social-link_tw {
-  background-position: -150px 0;
-  height: 16px;
-  width: 20px;
+  background-position: -9.375rem 0;
+  height: 1rem;
+  width: 1.25rem;
 }
 .footer__social-link_tw:hover {
   background-position: 0 bottom;

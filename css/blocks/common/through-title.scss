@@ -2,7 +2,7 @@ $black: #2f3234;
 $yellow: #f9b43b;
 
 .through-title {
-    font-size: 72px;
+    font-size: 4.5rem;
     color: $yellow;
     
     &_color {
@@ -15,12 +15,12 @@ $yellow: #f9b43b;
         &_center {
             display: flex;
             justify-content: center;
-            margin-bottom: 45px;
+            margin-bottom: rem(45px);
         }
     }
 
     &_margin {
-        margin-bottom: 40px;
+        margin-bottom: rem(40px);
     }
 
     &_color {
@@ -31,6 +31,6 @@ $yellow: #f9b43b;
 
     &_lineheight {
         line-height: 1em;
-        margin-bottom: 50px;
+        margin-bottom: rem(50px);
     }
 }

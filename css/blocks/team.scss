@@ -13,7 +13,7 @@ $yellow: #f9b43b;
     bottom: 0;
     width: 50%;
     background: rgba(#2f3234, .93);
-    padding-left: 70px;
+    padding-left: rem(70px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,10 +28,10 @@ $yellow: #f9b43b;
         content: "";
         height: 0;
         width: 0;
-        border: 9px solid transparent;
+        border: rem(9px) solid transparent;
         border-top-color: $yellow;
         border-bottom-width: 0px;
-        margin-right: 10px;
+        margin-right: rem(10px);
     }
 }
 
@@ -41,8 +41,8 @@ $yellow: #f9b43b;
 
 .trigger__content-pic {
     background: url('../img/team-avatar.jpg') center center no-repeat;
-    width: 100px;
-    height: 100px;
+    width: rem(100px);
+    height: rem(100px);
     border-radius: 50%;
 }
 
@@ -61,17 +61,17 @@ $yellow: #f9b43b;
     
     .team-trigger__content {
         display: flex;
-        margin-top: 20px;
-        margin-bottom: 40px;
-        margin-left: 17px;
+        margin-top: rem(20px);
+        margin-bottom: rem(40px);
+        margin-left: rem(17px);
     }
 }
 
 .content-text__title {
-    margin-bottom: 20px;
+    margin-bottom: rem(20px);
 }
 
 .trigger__content-text {
-    margin-left: 20px;
+    margin-left: rem(20px);
     color: #fff;
 }
