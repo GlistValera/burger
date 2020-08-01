@@ -21,6 +21,10 @@ $yellow: #f9b43b;
     @include tablets {
         width: 100%;
     }
+
+    @include phones {
+        padding: 0;
+    }
 }
 
 .team__content {

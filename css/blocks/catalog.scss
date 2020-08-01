@@ -32,6 +32,10 @@ $red: #e35028;
         justify-content: center;
         width: 95%;
     }
+
+    @include phones {
+        padding: 0;
+    }
 }
 
 .arrow {
@@ -53,6 +57,10 @@ $red: #e35028;
         @include tablets {
             left: 4%;
         }
+
+        @include phones {
+            top: 45%;
+        }
     }
 
     &__right {
@@ -68,6 +76,11 @@ $red: #e35028;
         border-bottom: 2px solid #fff;
         border-left: 2px solid #fff;
         transform: rotate(-135deg);
+
+        @include phones {
+            left: 93%;
+            top: 45%;
+        }
     }
     
 }
@@ -140,4 +153,9 @@ $red: #e35028;
 .burger-pic {
     display: block;
     max-width: 100%;
+    
+    @include phones {
+        padding-top: rem(100px);
+        max-width: 200%;
+    }
 }

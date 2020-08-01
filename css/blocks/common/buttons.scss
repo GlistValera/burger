@@ -13,4 +13,12 @@ $red: #e35028;
     &_transparent {
             background-color: transparent;
     }
+
+    &_phones {
+        padding: 10px 9px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
 }

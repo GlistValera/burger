@@ -8,6 +8,10 @@ $black: #2f3234;
 
 .best__list {
     display: flex;
+
+    @include phones {
+        flex-direction: column;
+    }
 }
 
 .best__item {
@@ -18,12 +22,43 @@ $black: #2f3234;
     &:last-child {
         margin-right: 0;
     }
+    
+    @include phones {
+        margin: 0;
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+        text-align: left;
+        margin-bottom: rem(50px);
+    }
 }
 
 .best__title {
     margin-top: rem(40px);
     margin-bottom: rem(25px);
     font-weight: bold;
+
+    @include phones {
+        margin-top: 0;
+    }
+}
+
+.best__content {
+    @include phones {
+        margin-left: rem(25px);
+    }
+
+    &_align {
+        @include phones {
+            margin-left: rem(48px);
+        }
+    }
+
+    &_last {
+        @include phones {
+            margin-left: rem(30px);
+        }
+    }
 }
 
 .best__title {
@@ -33,6 +68,9 @@ $black: #2f3234;
 .best__desription {
     font-size: rem(14px);
 
+    @include phones {
+        font-size: rem(16px);
+    }
 }
 
 

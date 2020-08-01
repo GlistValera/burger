@@ -32,6 +32,10 @@ $red: #e35028;
 
 .delivery__form-left {
     width: 50%;
+
+    @include phones {
+        width: 95%;
+    }
 }
 
 .form__block {
@@ -71,6 +75,10 @@ $red: #e35028;
     @include tablets {
         margin-left: 0;
     }
+
+    @include phones {
+        width: 95%;
+    }
 }
 
 .form__buttons-row {
@@ -85,6 +93,11 @@ $red: #e35028;
 
     &:first-child {
         margin-top: 20px;
+    }
+
+    @include phones {
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -174,5 +187,12 @@ $red: #e35028;
         // border-width: 0 2px 2px 0;
         transform: rotate(45deg);
         border-radius: 0;
+    }
+}
+
+.form__buttons-bottom {
+    @include phones {
+        display: flex;
+        justify-content: center;
     }
 }

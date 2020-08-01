@@ -24,6 +24,15 @@
         width: 50%;
         height: 25%;
     }
+
+    @include phones {
+        &:hover {
+            .phones__button {
+                opacity: 1;
+                transition: .3s;
+            }
+        }
+    }
 }
 
 .reviews__hover {
@@ -39,11 +48,34 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
+
+    @include phones {
+        display: none;
+    }
+}
+
+.phones__button-name {
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    width: 50%;
+    margin-bottom: rem(30px);
 }
 
 .reviews__hover-text {
     margin-top: rem(30px);
     margin-bottom: rem(20px);
     margin-left: rem(20px);
+}
+
+.phones__button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
 }
 

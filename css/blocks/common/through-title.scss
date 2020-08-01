@@ -50,4 +50,11 @@ $yellow: #f9b43b;
             width: 50%;
         }
     }
+    
+    &_phones {
+        @include phones {
+            width: 100%;
+            margin-bottom: rem(40px);
+        }
+    }
 }
