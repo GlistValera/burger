@@ -41,6 +41,7 @@ body {
 
     @include phones {
         max-width: rem(460px);
+        width: 92%;
     }
 
 }

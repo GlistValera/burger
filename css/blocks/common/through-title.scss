@@ -29,6 +29,10 @@ $yellow: #f9b43b;
             display: flex;
             justify-content: center;
             margin-bottom: 45px;
+
+            @include phones {
+                text-align: center;
+            }
         }
     }
 
