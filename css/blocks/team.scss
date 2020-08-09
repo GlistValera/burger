@@ -30,7 +30,7 @@ $yellow: #f9b43b;
 .team__content {
     
     @include tablets {
-        display: flex;
+        // display: none;
         flex-direction: column;
         align-items: center;
     }
@@ -53,16 +53,6 @@ $yellow: #f9b43b;
     }
 }
 
-.team-trigger__content {
-    
-    @include tablets {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-}
-
 .trigger__content-pic {
     background: url('../img/team-avatar.jpg') center center no-repeat;
     width: rem(100px);
@@ -72,9 +62,16 @@ $yellow: #f9b43b;
 
 .team-trigger__content {
     display: none;
+    margin-top: 1.25rem;
+    margin-bottom: 2.5rem;
+    margin-left: 1.0625rem;
 
     @include tablets {
         margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 }
 
@@ -105,9 +102,9 @@ $yellow: #f9b43b;
     
     .team-trigger__content {
         display: flex;
-        margin-top: rem(20px);
-        margin-bottom: rem(40px);
-        margin-left: rem(17px);
+        margin-top: 1.25rem;
+        margin-bottom: 2.5rem;
+        margin-left: 1.0625rem;
 
         @include tablets {
             margin-left: 0;
