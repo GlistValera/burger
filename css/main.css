@@ -20,6 +20,7 @@
 }
 
 .through-title {
+  font-family: "Gagalin", Helvetica, sans-serif;
   font-size: 4.5rem;
   color: #f9b43b;
 }
@@ -273,6 +274,7 @@ footer {
 }
 
 .leading__description {
+  font-family: "Lifehack-Medium", Helvetica, sans-serif;
   font-size: 4.0625rem;
 }
 
@@ -334,6 +336,7 @@ footer {
 }
 
 .best__title {
+  font-family: "Lifehack-Medium", Helvetica, sans-serif;
   margin-top: 2.5rem;
   margin-bottom: 1.5625rem;
   font-weight: bold;
@@ -380,6 +383,21 @@ footer {
   align-items: center;
 }
 
+.slider {
+  width: 900px;
+  height: 457px;
+}
+
+.slick__item {
+  display: flex;
+  width: 900px;
+  float: left;
+}
+
+.composition__title {
+  font-family: "Gagalin", Helvetica, sans-serif;
+}
+
 .composition {
   background: #f08c33;
   padding: 0.625rem 1.25rem;
@@ -417,7 +435,7 @@ footer {
   width: 20px;
   height: 20px;
   top: 50%;
-  left: -1%;
+  left: 1%;
   content: "";
   border-top: 1px solid transparent;
   border-right: 1px solid transparent;
@@ -475,6 +493,9 @@ footer {
   }
 }
 
+.catalog__picture-icon {
+  margin-right: 1.25rem;
+}
 @media screen and (max-width: 798px) {
   .catalog__picture-icon {
     display: flex;
@@ -493,6 +514,8 @@ footer {
 }
 
 .catalog__content-description {
+  line-height: 1.8em;
+  color: #fff;
   font-size: 0.875rem;
 }
 @media screen and (max-width: 798px) {
@@ -512,11 +535,13 @@ footer {
 }
 
 .price__numeral {
+  font-family: "Gagalin", Helvetica, sans-serif;
   font-size: 4.5rem;
   color: #e35028;
 }
 
 .price__text {
+  font-family: "Gagalin", Helvetica, sans-serif;
   margin-right: 1.875rem;
   margin-left: 0.625rem;
   color: #e35028;
@@ -571,6 +596,7 @@ footer {
 }
 
 .team-trigger {
+  font-family: "Gagalin", Helvetica, sans-serif;
   color: #fff;
   display: flex;
   align-items: center;
@@ -644,6 +670,7 @@ footer {
 }
 
 .content-text__title {
+  font-family: "Gagalin", Helvetica, sans-serif;
   margin-bottom: 1.25rem;
 }
 
@@ -707,6 +734,10 @@ footer {
   .reviews__hover {
     display: none;
   }
+}
+
+.reviews__hover-name {
+  font-family: "Gagalin", Helvetica, sans-serif;
 }
 
 .phones__button-name {
