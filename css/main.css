@@ -587,6 +587,10 @@ footer {
   }
 }
 
+.team__content {
+  height: 50vh;
+  width: 100%;
+}
 @media screen and (max-width: 798px) {
   .team__content {
     flex-direction: column;
@@ -610,6 +614,13 @@ footer {
   margin-right: 0.625rem;
 }
 
+.team-trigger__align {
+  display: flex;
+  margin-top: 1.25rem;
+  margin-bottom: 2.5rem;
+  margin-left: 1.0625rem;
+}
+
 .trigger__content-pic {
   background: url("../img/team-avatar.jpg") center center no-repeat;
   width: 6.25rem;
@@ -619,9 +630,6 @@ footer {
 
 .team-trigger__content {
   display: none;
-  margin-top: 1.25rem;
-  margin-bottom: 2.5rem;
-  margin-left: 1.0625rem;
 }
 @media screen and (max-width: 798px) {
   .team-trigger__content {
@@ -641,6 +649,10 @@ footer {
   }
 }
 
+.team__item {
+  margin-bottom: 40px;
+}
+
 @media screen and (max-width: 798px) {
   .team__item_active {
     display: flex;
@@ -653,12 +665,6 @@ footer {
 }
 .team__item_active .team-trigger:before {
   transform: rotate(-180deg);
-}
-.team__item_active .team-trigger__content {
-  display: flex;
-  margin-top: 1.25rem;
-  margin-bottom: 2.5rem;
-  margin-left: 1.0625rem;
 }
 @media screen and (max-width: 798px) {
   .team__item_active .team-trigger__content {

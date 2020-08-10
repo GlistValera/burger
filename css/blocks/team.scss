@@ -28,6 +28,8 @@ $yellow: #f9b43b;
 }
 
 .team__content {
+    height: 50vh;
+    width: 100%;
     
     @include tablets {
         // display: none;
@@ -53,6 +55,13 @@ $yellow: #f9b43b;
     }
 }
 
+.team-trigger__align {
+    display: flex;
+    margin-top: 1.25rem;
+    margin-bottom: 2.5rem;
+    margin-left: 1.0625rem;
+}
+
 .trigger__content-pic {
     background: url('../img/team-avatar.jpg') center center no-repeat;
     width: rem(100px);
@@ -62,9 +71,6 @@ $yellow: #f9b43b;
 
 .team-trigger__content {
     display: none;
-    margin-top: 1.25rem;
-    margin-bottom: 2.5rem;
-    margin-left: 1.0625rem;
 
     @include tablets {
         margin-left: 0;
@@ -84,6 +90,10 @@ $yellow: #f9b43b;
     }
 }
 
+.team__item {
+    margin-bottom: 40px;
+}
+
 .team__item_active {
 
     @include tablets {
@@ -101,10 +111,8 @@ $yellow: #f9b43b;
     }
     
     .team-trigger__content {
-        display: flex;
-        margin-top: 1.25rem;
-        margin-bottom: 2.5rem;
-        margin-left: 1.0625rem;
+        // display: flex;
+        
 
         @include tablets {
             margin-left: 0;

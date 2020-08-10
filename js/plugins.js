@@ -14,7 +14,7 @@ $(function() {
     const content = item.find('.team-trigger__content');
     
     item.toggleClass('team__item_active');
-    content.slideToggle(1000);
+    content.slideToggle(500);
 
   })
 })
