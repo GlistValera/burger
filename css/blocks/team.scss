@@ -57,9 +57,7 @@ $yellow: #f9b43b;
 
 .team-trigger__align {
     display: flex;
-    margin-top: 1.25rem;
-    margin-bottom: 2.5rem;
-    margin-left: 1.0625rem;
+    
 }
 
 .trigger__content-pic {
@@ -70,7 +68,13 @@ $yellow: #f9b43b;
 }
 
 .team-trigger__content {
-    display: none;
+    margin-top: 1.25rem;
+    // margin-bottom: 2.5rem;
+    margin-left: 1.0625rem;
+    height: 0;
+    overflow: hidden;
+    transition: .5s;
+
 
     @include tablets {
         margin-left: 0;

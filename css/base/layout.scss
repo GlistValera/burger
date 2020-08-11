@@ -49,9 +49,17 @@ body {
 .wrapper {
     position: relative;
     width: 100%;
-    // min-width: rem(940px) + rem(20px);
-    min-height: 100%;
-    overflow: hidden;
+    height: 100%;
+    // overflow: hidden;
+    min-height: rem(650px); 
+
+}
+
+.maincontent {
+    height: 100%;
+    min-height: rem(650px);
+    transition: 1s;
+    will-change: translateZ(0);
 }
 
 h1,

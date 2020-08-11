@@ -109,8 +109,15 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-  min-height: 100%;
-  overflow: hidden;
+  height: 100%;
+  min-height: 40.625rem;
+}
+
+.maincontent {
+  height: 100%;
+  min-height: 40.625rem;
+  transition: 1s;
+  will-change: translateZ(0);
 }
 
 h1,
@@ -408,6 +415,41 @@ footer {
   border-radius: 0.3125rem;
   color: #fff;
   text-decoration: none;
+  position: relative;
+}
+
+.dropdown {
+  width: 300px;
+  height: 300px;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 5.625rem;
+  border-radius: 10px;
+  opacity: 0.7;
+}
+
+.dropdown__list {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding-left: 25px;
+  padding-right: 15px;
+}
+
+.dropdown__item {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+.dropdown__item:hover {
+  background: red;
+  opacity: 1;
+}
+
+.dropdown__item-text {
+  display: flex;
+  width: 100%;
 }
 
 .container-catalog {
@@ -616,9 +658,6 @@ footer {
 
 .team-trigger__align {
   display: flex;
-  margin-top: 1.25rem;
-  margin-bottom: 2.5rem;
-  margin-left: 1.0625rem;
 }
 
 .trigger__content-pic {
@@ -629,7 +668,11 @@ footer {
 }
 
 .team-trigger__content {
-  display: none;
+  margin-top: 1.25rem;
+  margin-left: 1.0625rem;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
 }
 @media screen and (max-width: 798px) {
   .team-trigger__content {
@@ -773,37 +816,31 @@ footer {
   background-size: cover;
   color: #fff;
   position: relative;
-}
-
-.menu__list {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 50%;
-  transform: rotate(-90deg);
   display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
 }
 
-.menu__item-trigger {
-  color: #fff;
-  text-decoration: none;
+.menu__col {
+  height: 100vh;
+}
+.menu__col_left {
+  width: 40%;
+}
+.menu__col_right {
+  width: 60%;
 }
 
-.trigger__content {
-  display: none;
-}
-
-.menu__item-text {
-  font-size: 2.5rem;
+.trigger {
+  background: url(../img/menu-meat-bg.jpg) center center no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 80px;
+  position: relative;
 }
 
 .contaier__delivery {
   flex-direction: row;
   align-items: center;
-  width: 92%;
+  width: 70%;
 }
 
 .delivery {

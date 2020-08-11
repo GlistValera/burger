@@ -3,29 +3,27 @@
     background-size: cover;
     color: #fff;
     position: relative;
-}
-
-.menu__list {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 50%;
-    transform: rotate(-90deg);
     display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
 }
 
-.menu__item-trigger {
-    color: #fff;
-    text-decoration: none;
+.menu__col {
+    height: 100vh;
+    
+    &_left {
+        width: 40%;
+    }
+
+    &_right {
+        width: 60%;
+    }
 }
 
-.trigger__content {
-    display: none;
+.trigger {
+    background: url(../img/menu-meat-bg.jpg) center center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 80px;
+    position: relative;
+    
 }
 
-.menu__item-text {
-    font-size: rem(40px);
-}
