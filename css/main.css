@@ -1126,3 +1126,7 @@ footer {
 .footer__social-link_tw:hover {
   background-position: 0 bottom;
 }
+
+.popup {
+  display: block;
+}

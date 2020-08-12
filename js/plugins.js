@@ -68,3 +68,12 @@ $('.wrapper').on('wheel', e => {
     // console.log('scroll up')
   }
 });
+
+
+//fancybox
+
+$('[data-fancybox]').fancybox({
+	// Options will go here
+});
+
+$(".close-modal ").addClass("blackZone")
