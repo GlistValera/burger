@@ -849,6 +849,57 @@ footer {
   position: relative;
 }
 
+.trigger_veg {
+  background: url(../img/menu-veg-bg.jpg) center center no-repeat;
+}
+
+.trigger_veg {
+  background: url(../img/menu-di-bg.jpg) center center no-repeat;
+}
+
+.trigger__text-title {
+  font-family: "Gagalin", Helvetica, sans-serif;
+  text-decoration: none;
+  font-size: 2.5rem;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  position: absolute;
+  transform: rotate(-90deg) translateY(-50%);
+  transform-origin: 0 0;
+  left: 50%;
+  bottom: 15%;
+  margin-top: -1.25rem;
+  width: 50vh;
+}
+
+.menu__bar-list {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu__bar-item {
+  display: flex;
+}
+
+.trigger__content {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.trigger__text {
+  width: 0;
+}
+
+.menu__bar-item_active .trigger__text {
+  width: 90%;
+}
+.menu__bar-item_active .trigger__content-wrap {
+  background: rgba(0, 0, 0, 0.6);
+}
+
 .contaier__delivery {
   flex-direction: row;
   align-items: center;
