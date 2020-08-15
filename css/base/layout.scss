@@ -8,6 +8,8 @@ html {
     @include phones {
         font-size: 14px;
     }
+
+    zoom: normal;
 }
 
 html,

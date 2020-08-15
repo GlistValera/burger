@@ -61,6 +61,7 @@
 
 html {
   font-size: 16px;
+  zoom: normal;
 }
 @media screen and (max-width: 798px) {
   html {
@@ -1095,20 +1096,29 @@ footer {
 }
 
 .map {
-  background: url("../img/map-bg.jpg") center center no-repeat;
-  background-size: cover;
-  display: flex;
-  align-items: flex-end;
+  position: relative;
+}
+
+.map__pic {
+  width: 100%;
+  height: 100%;
 }
 
 .footer {
-  background: black;
+  background: rgba(0, 0, 0, 0.8);
   color: #fff;
   font-size: 0.875rem;
+  height: 3.75rem;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 94%;
+  left: 0;
 }
 
 .container__footer {
   flex-direction: row;
+  width: 100%;
 }
 
 .footer__col-right,
@@ -1134,6 +1144,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-right: 10px;
 }
 
 .footer__social-link {
