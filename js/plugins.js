@@ -43,32 +43,83 @@ $(function () {
 
 // // one page scroll
 
-// const display = $('.maincontent');
-// const sections = $('.section');
+const display = $('.maincontent');
+const sections = $('.section');
 
-// const kekw = sectionEq => {
-//   const position = (sectionEq * -100) + '%';
+let inScroll = false
 
-//   display.css({
-//     'transform' : 'translate(0, ${position})',
-//     '-webkit-transform' : 'translate(0, ${position})'
+const switchMenuActiveClass = sectionEq => {
+  $('.fixed-menu__item').eq(sectionEq).addClass('fixed-menu__item_active')
+    .siblings().removeClass('fixed-menu__item_active');
+}
 
-//   })
-// }
+const kekw = sectionEq => {
+  const position = (sectionEq * -100) + '%';
 
-// $('.wrapper').on('wheel', e => {
-//   const deltaY = e.originalEvent.deltaY;
+  if (inScroll == false) {
+    inScroll = true
+  }
 
-//   if (deltaY > 0) {
-//     // console.log('scroll down')
-//     kekw(4)
+  display.css({
+    'transform': `translate(0, ${position})`
+  })
 
-//   }
+  sections.eq(sectionEq).addClass('section_active')
+    .siblings().removeClass('section_active')
 
-//   if (deltaY < 0) {
-//     // console.log('scroll up')
-//   }
-// });
+  setTimeout(() => {
+    inScroll = false;
+    switchMenuActiveClass(sectionEq);
+  }, 1200);
+
+}
+
+const difineSections = sections => {
+  const activeSection = sections.filter('.section_active');
+  return {
+    activeSection: activeSection,
+    nextSection: activeSection.next(),
+    prevSection: activeSection.prev()
+  }
+}
+
+$('.wrapper').on('wheel', e => {
+  const deltaY = e.originalEvent.deltaY;
+  const section = difineSections(sections);
+
+  if (deltaY > 0 && section.nextSection.length) {
+    // console.log('down')
+    kekw(section.nextSection.index());
+  }
+
+  if (deltaY < 0 && section.prevSection.length) {
+    // console.log('up')
+    kekw(section.prevSection.index());
+
+  }
+});
+
+$(document).on('keydown', e => {
+  const section = difineSections(sections);
+
+  if (inScroll) return
+
+  switch (e.keyCode) {
+    case 40: //up
+
+      if (!section.nextSection.length) return;
+      kekw(section.nextSection.index());
+      break;
+
+    case 38: //down
+
+      if (!section.prevSection.length) return;
+      kekw(section.prevSection.index());
+      break;
+  }
+})
+
+// menu accordion
 
 $(function () {
 
@@ -76,7 +127,7 @@ $(function () {
   $('.trigger').on('click', function (e) {
     e.preventDefault();
     //получаем нужные нам данные
-     $this = $(this),
+    $this = $(this),
       //получаем всё блоки menu
       container = $this.closest('.menu__bar-list'),
       //получаем li по которому кликнули

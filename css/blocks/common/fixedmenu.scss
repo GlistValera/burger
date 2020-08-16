@@ -1,0 +1,38 @@
+.fixed-menu {
+    position: fixed;
+    top: 10%;
+    left: 95%;
+
+    @include phones {
+        display: none;
+    }
+}
+
+.fixed-menu__item {
+    position: relative;
+    width: 6px;
+    height: 6px;
+    background: #fff;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    // border: 1px solid red;
+    padding: 2px;
+}
+
+.fixed-menu__item-border {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 16px;
+    height: 16px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+.fixed-menu__item_active {
+    .fixed-menu__item-border {
+        opacity: 1;
+    }
+}
