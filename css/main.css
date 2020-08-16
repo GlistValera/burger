@@ -873,8 +873,18 @@ footer {
 .menu__col_left {
   width: 40%;
 }
+@media screen and (max-width: 480px) {
+  .menu__col_left {
+    width: 0;
+  }
+}
 .menu__col_right {
   width: 60%;
+}
+@media screen and (max-width: 480px) {
+  .menu__col_right {
+    width: 100%;
+  }
 }
 
 .trigger {

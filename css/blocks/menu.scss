@@ -11,12 +11,21 @@
     
     &_left {
         width: 40%;
+
+        @include phones {
+            width: 0;
+        }
     }
 
     &_right {
         width: 60%;
+
+        @include phones {
+            width: 100%;
+        }
     }
 }
+
 
 .trigger {
     background: url(../img/menu-meat-bg.jpg) center center no-repeat;
