@@ -107,8 +107,8 @@ body {
 }
 @media screen and (max-width: 480px) {
   .container {
-    max-width: 92%;
-    width: 92%;
+    max-width: 90%;
+    width: 90%;
   }
 }
 
@@ -1147,7 +1147,7 @@ footer {
 }
 
 .video__pic {
-  width: 90%;
+  width: 100%;
 }
 
 .video__img {
