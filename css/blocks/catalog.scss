@@ -123,7 +123,7 @@ $red: #e35028;
         padding: 0;
         // width: 95%;
         height: 100%;
-        padding-right: 20px;
+        padding-right: 17px;
     }
 }
 
@@ -181,6 +181,10 @@ $red: #e35028;
     @include tablets {
         width: 80%;
     }
+    
+    @include phones {
+        width: 100%;
+    }
 }
 
 .catalog__picture {
@@ -200,11 +204,15 @@ $red: #e35028;
         max-width: 100%;
         justify-content: center;
     }
+
+    @include phones {
+        width: 100%;
+    }
 }
 
 .catalog__picture-calorie {
     @include phones {
-        width: 100%;
+        width: rem(140px);
     }
 }
 
@@ -256,7 +264,25 @@ $red: #e35028;
     
     @include phones {
         padding-top: rem(100px);
-        max-width: 200%;
+        max-width:100%;
+    }
+}
+
+.bx-wrapper .bx-next {
+    @include phones {
+        left: 97%;
+    }
+}
+
+.bx-wrapper .bx-prev {
+    @include phones {
+        left: -3%;
+    }
+}
+
+.bx-wrapper {
+    @include phones {
+        height: 100%;
     }
 }
 
