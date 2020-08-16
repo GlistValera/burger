@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="./css/jquery.bxslider.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     <link rel="stylesheet" href="./css/main.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=af9466b3-88a5-4d86-8581-ea5039559733&lang=ru_RU" type="text/javascript">
+    </script>
+    </script>
 </head>
 
 <body>
@@ -857,10 +860,8 @@
                     </div>
                 </div>
             </section>
-            <section class="section map">
-                <div class="map__pic">
-                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa55b52c64903350f5217f65195d2228750dcf7e6107084e8ae4c108e2cc4f596&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
-                </div>
+            <section class="section maps">
+                <div id="map" class="map"></div>
                 <footer class="footer">
                     <div class="container container__footer">
                         <div class="footer__col-left">
@@ -901,6 +902,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
     
     <script src="./js/plugins.js"></script>
+    <script src="./js/map.js"></script>
 </body>
 
 </html>
