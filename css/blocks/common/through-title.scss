@@ -62,4 +62,10 @@ $yellow: #f9b43b;
             margin-bottom: rem(40px);
         }
     }
+
+    &_team {
+        @include phones {
+            text-align: center;
+        }
+    }
 }

@@ -96,6 +96,12 @@ $yellow: #f9b43b;
 
 .team__item {
     margin-bottom: 40px;
+    
+    @include phones {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .team__item_active {

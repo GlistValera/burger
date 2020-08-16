@@ -42,7 +42,7 @@ body {
     }
 
     @include phones {
-        max-width: rem(460px);
+        max-width: 92%;
         width: 92%;
     }
 
@@ -54,6 +54,7 @@ body {
     height: 100%;
     // overflow: hidden;
     min-height: rem(650px); 
+    overflow-x: hidden;
 
 }
 

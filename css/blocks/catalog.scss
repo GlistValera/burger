@@ -8,17 +8,32 @@ $red: #e35028;
 }
 
 .slider {
-    width: 900px;
-    height: 457px;
+    width: 90%;
+    height: 100%;
     // overflow: hidden;
+
+    @include phones {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 80%;
+    }
 }
 
 
 
 .slick__item {
     display: flex;
-    width: 900px;
-    float: left;
+    width: 100%;
+    // float: left;
+    overflow: hidden;
+
+    @include phones {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .composition__title {
@@ -101,11 +116,13 @@ $red: #e35028;
     @include tablets {
         flex-direction: column;
         justify-content: center;
-        width: 95%;
+        // width: 95%;
     }
 
     @include phones {
         padding: 0;
+        // width: 95%;
+        height: 100%;
     }
 }
 
@@ -184,6 +201,12 @@ $red: #e35028;
     }
 }
 
+.catalog__picture-calorie {
+    @include phones {
+        width: 100%;
+    }
+}
+
 .catalog__content {
 
     @include tablets {
@@ -235,3 +258,4 @@ $red: #e35028;
         max-width: 200%;
     }
 }
+
