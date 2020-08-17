@@ -178,7 +178,7 @@ $(document).on('keydown', e => {
 if (isMobile) {
   $(window).swipe({
     swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
-      alert('you swipe' + direction)
+      scrollToSection(direction)
     }
   })
 }
