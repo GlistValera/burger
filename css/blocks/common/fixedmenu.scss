@@ -17,6 +17,12 @@
     border-radius: 50%;
     // border: 1px solid red;
     padding: 2px;
+
+    &:hover {
+        .fixed-menu__item-border {
+            opacity: 1;
+        }
+    }
 }
 
 .fixed-menu__item-border {

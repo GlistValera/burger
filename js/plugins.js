@@ -1,3 +1,7 @@
+const mobileDetect = new MobileDetect(window.navigator.userAgent);
+  const isMobile = mobileDetect.mobile();
+  // alert(isMobile)
+
 $(document).ready(function () {
   $('.slick__list').bxSlider();
 });
@@ -41,6 +45,16 @@ $(function () {
   })
 })
 
+// arrow
+
+$('.arrow-down').on('click', e => {
+  e.preventDefault()
+
+  display.css({
+    'transform': `translate(0, -100%)`
+  })
+});
+
 // // one page scroll
 
 const display = $('.maincontent');
@@ -56,6 +70,37 @@ const switchMenuActiveClass = sectionEq => {
 const kekw = sectionEq => {
   const position = (sectionEq * -100) + '%';
 
+
+  // fixed menu color
+  const bgFixedMenuItem = $('.fixed-menu__item');
+  const bgFixedMenuItemBorder = $('.fixed-menu__item-border');
+
+  
+
+  const colorFixedMenu = position => {
+
+    if (position == '-100%' || position == '-700%' || position == '-800%') {
+
+      bgFixedMenuItem.css({
+        'background': '#000'
+      }),
+        bgFixedMenuItemBorder.css({
+          'border': '1px solid #000'
+        });
+    } else {
+
+      bgFixedMenuItem.css({
+        'background': '#fff'
+      }),
+        bgFixedMenuItemBorder.css({
+          'border': '1px solid #fff'
+        });
+    }
+  }
+  colorFixedMenu(position)
+
+
+  // продолжение ops
   if (inScroll == false) {
     inScroll = true
   }
@@ -83,20 +128,31 @@ const difineSections = sections => {
   }
 }
 
-$('.wrapper').on('wheel', e => {
-  const deltaY = e.originalEvent.deltaY;
-  const section = difineSections(sections);
+const scrollToSection = direction => {
+  const section = difineSections(sections)
 
-  if (deltaY > 0 && section.nextSection.length) {
-    // console.log('down')
-    kekw(section.nextSection.index());
+  if(inScroll) return;
+
+  if(direction === 'up' && section.nextSection.length){
+    kekw(section.nextSection.index())
   }
 
-  if (deltaY < 0 && section.prevSection.length) {
-    // console.log('up')
-    kekw(section.prevSection.index());
-
+  if(direction === 'down' && section.prevSection.length){
+    kekw(section.prevSection.index())
   }
+}
+
+$('.wrapper').on({
+  wheel: e => {
+    const deltaY = e.originalEvent.deltaY;
+    let direction = (deltaY > 0)
+    ? 'up'
+    : 'down'
+
+    scrollToSection(direction);
+  },
+  touchmove: e => (e.preventDefault())
+
 });
 
 $(document).on('keydown', e => {
@@ -118,6 +174,14 @@ $(document).on('keydown', e => {
       break;
   }
 })
+
+if (isMobile) {
+  $(window).swipe({
+    swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+      alert('you swipe' + direction)
+    }
+  })
+}
 
 // menu accordion
 
@@ -176,3 +240,19 @@ $(function () {
     }
   });
 });
+
+// data-scroll-to (рабочие менюшки head и fixed)
+
+$('[data-scroll-to]').on('click touchstar', e => {
+  e.preventDefault();
+
+  const $this = $(e.currentTarget);
+  const sectionIndex = parseInt($this.attr('data-scroll-to'));
+
+  kekw(sectionIndex)
+})
+
+
+// solor fixed menu
+
+

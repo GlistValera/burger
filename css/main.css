@@ -84,6 +84,9 @@
   border-radius: 50%;
   padding: 2px;
 }
+.fixed-menu__item:hover .fixed-menu__item-border {
+  opacity: 1;
+}
 
 .fixed-menu__item-border {
   position: absolute;
@@ -157,11 +160,31 @@ body {
   overflow: hidden;
   min-height: 40.625rem;
 }
+@media screen and (max-width: 798px) {
+  .wrapper {
+    min-height: auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  .wrapper {
+    min-height: auto;
+  }
+}
 
 .maincontent {
   height: 100%;
   min-height: 40.625rem;
   transition: 1s;
+}
+@media screen and (max-width: 798px) {
+  .maincontent {
+    min-height: auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  .maincontent {
+    min-height: auto;
+  }
 }
 
 h1,

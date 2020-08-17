@@ -12,8 +12,9 @@
     <link rel="stylesheet" href="./css/jquery.bxslider.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     <link rel="stylesheet" href="./css/main.css">
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=af9466b3-88a5-4d86-8581-ea5039559733&lang=ru_RU" type="text/javascript">
-    </script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=af9466b3-88a5-4d86-8581-ea5039559733&lang=ru_RU"
+        type="text/javascript">
+        </script>
     </script>
 </head>
 
@@ -31,25 +32,25 @@
                             <nav class="nav">
                                 <ul class="nav__list">
                                     <li class="nav__item">
-                                        <a href="#" class="nav__link">О нас</a>
+                                        <a href="#" class="nav__link" data-scroll-to="1">О нас</a>
                                     </li>
                                     <li class="nav__item">
-                                        <a href="#" class="nav__link">Бургеры</a>
+                                        <a href="#" class="nav__link" data-scroll-to="2">Бургеры</a>
                                     </li>
                                     <li class="nav__item">
-                                        <a href="#" class="nav__link">Команда</a>
+                                        <a href="#" class="nav__link" data-scroll-to="3">Команда</a>
                                     </li>
                                     <li class="nav__item">
-                                        <a href="#" class="nav__link">Меню</a>
+                                        <a href="#" class="nav__link" data-scroll-to="4">Меню</a>
                                     </li>
                                     <li class="nav__item">
-                                        <a href="#" class="nav__link">Отзывы</a>
+                                        <a href="#" class="nav__link" data-scroll-to="5">Отзывы</a>
                                     </li>
                                     <li class="nav__item">
-                                        <a href="#" class="nav__link">Как мы работаем</a>
+                                        <a href="#" class="nav__link" data-scroll-to="7">Как мы работаем</a>
                                     </li>
                                     <li class="nav__item">
-                                        <a href="#" class="nav__link">Контакты</a>
+                                        <a href="#" class="nav__link" data-scroll-to="8">Контакты</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -609,7 +610,7 @@
                                     repellat, voluptatem ad magni perspiciatis, a laboriosam reiciendis. Exercitationem,
                                     modi.</div>
                             </div>
-                            <a class="button" href="#qwerty" rel="modal:open">Подробнее</a>   
+                            <a class="button" href="#qwerty" rel="modal:open">Подробнее</a>
                         </div>
                         <div class="phones__button">
                             <div class="phones__button-name">lorem loremlo</div>
@@ -895,31 +896,31 @@
         </div>
         <ul class="fixed-menu">
             <li class="fixed-menu__item fixed-menu__item_active">
-                <div class="fixed-menu__item-border"></div>
+                <a class="fixed-menu__item-border" href="" data-scroll-to="0"></a>
             </li>
             <li class="fixed-menu__item">
-                <div class="fixed-menu__item-border"></div>
+                <a class="fixed-menu__item-border" href="" data-scroll-to="1"></a>
             </li>
             <li class="fixed-menu__item">
-                <div class="fixed-menu__item-border"></div>
+                <a class="fixed-menu__item-border" href="" data-scroll-to="2"></a>
             </li>
             <li class="fixed-menu__item">
-                <div class="fixed-menu__item-border"></div>
+                <a class="fixed-menu__item-border" href="" data-scroll-to="3"></a>
             </li>
             <li class="fixed-menu__item">
-                <div class="fixed-menu__item-border"></div>
+                <a class="fixed-menu__item-border" href="" data-scroll-to="4"></a>
             </li>
             <li class="fixed-menu__item">
-                <div class="fixed-menu__item-border"></div>
+                <a class="fixed-menu__item-border" href="" data-scroll-to="5"></a>
             </li>
             <li class="fixed-menu__item">
-                <div class="fixed-menu__item-border"></div>
+                <a class="fixed-menu__item-border" href="" data-scroll-to="6"></a>
             </li>
             <li class="fixed-menu__item">
-                <div class="fixed-menu__item-border"></div>
+                <a class="fixed-menu__item-border" href="" data-scroll-to="7"></a>
             </li>
             <li class="fixed-menu__item">
-                <div class="fixed-menu__item-border"></div>
+                <a class="fixed-menu__item-border" href="" data-scroll-to="8"></a>
             </li>
         </ul>
     </div>
@@ -928,7 +929,12 @@
         crossorigin="anonymous"></script>
     <script src="./js/jquery.bxslider.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"
+        integrity="sha512-YYiD5ZhmJ0GCdJvx6Xe6HzHqHvMpJEPomXwPbsgcpMFPW+mQEeVBU6l9n+2Y+naq+CLbujk91vHyN18q6/RSYw=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.4/mobile-detect.min.js"
+        integrity="sha512-hSVyGuXBHmZy+A+P21DRUAuc7UTfcqc0geieb/H1ZmqiJAoDTfzFYIOBAMTcFUWU/PwLPEoREYG/77ckPB6oSw=="
+        crossorigin="anonymous"></script>
     <script src="./js/plugins.js"></script>
     <script src="./js/map.js"></script>
 </body>

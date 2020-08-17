@@ -57,6 +57,14 @@ body {
     min-height: rem(650px); 
     // overflow-x: hidden;
 
+    @include tablets {
+        min-height: auto;
+    }
+
+    @include phones {
+        min-height: auto;
+    }
+
 }
 
 .maincontent {
@@ -64,6 +72,14 @@ body {
     min-height: rem(650px);
     transition: 1s;
     // transform: translateZ(0);
+
+    @include tablets {
+        min-height: auto;
+    }
+
+    @include phones {
+        min-height: auto;
+    }
 }
 
 h1,
