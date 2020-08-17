@@ -241,6 +241,7 @@ footer {
 @media screen and (max-width: 480px) {
   .section {
     min-width: 28.75rem;
+    height: 100%;
   }
 }
 
