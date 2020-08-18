@@ -6,7 +6,10 @@
 .header {
     display: flex;
     align-items: center;
+    position: relative;
 }
+
+
 
 .nav {
     margin-right: rem(15px);
@@ -14,10 +17,36 @@
     @include tablets {
         display: none;
     }
+
+    @include phones {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+    }
 }
 
+.nav__active {
+    @include phones {
+        display: flex;
+    }
+}
 .nav__list {
     display: flex;
+
+    @include tablets {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.nav__item {
+    @include phones {
+        margin-bottom: 10px;
+        margin-right: 20px;
+    }
 }
 
 .nav__link {
@@ -36,6 +65,10 @@
         border-radius: 50%;
         background: #fff;
         margin: 0 rem(16px);
+        
+        @include phones {
+            display: none;
+        }
     }
 
 }

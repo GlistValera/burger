@@ -17,6 +17,11 @@
     position: absolute;
     top: 94%;
     left: 0;
+
+    @include phones {
+        height: rem(80px);
+        top: 92%;
+    }
 }
 
 .container__footer {
@@ -32,6 +37,9 @@
 
     &-right {
         width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
     }
     
 }

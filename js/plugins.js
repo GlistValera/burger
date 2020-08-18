@@ -1,6 +1,6 @@
 const mobileDetect = new MobileDetect(window.navigator.userAgent);
-  const isMobile = mobileDetect.mobile();
-  // alert(isMobile)
+const isMobile = mobileDetect.mobile();
+// alert(isMobile)
 
 $(document).ready(function () {
   $('.slick__list').bxSlider();
@@ -75,7 +75,7 @@ const kekw = sectionEq => {
   const bgFixedMenuItem = $('.fixed-menu__item');
   const bgFixedMenuItemBorder = $('.fixed-menu__item-border');
 
-  
+
 
   const colorFixedMenu = position => {
 
@@ -131,13 +131,13 @@ const difineSections = sections => {
 const scrollToSection = direction => {
   const section = difineSections(sections)
 
-  if(inScroll) return;
+  if (inScroll) return;
 
-  if(direction === 'up' && section.nextSection.length){
+  if (direction === 'up' && section.nextSection.length) {
     kekw(section.nextSection.index())
   }
 
-  if(direction === 'down' && section.prevSection.length){
+  if (direction === 'down' && section.prevSection.length) {
     kekw(section.prevSection.index())
   }
 }
@@ -146,8 +146,8 @@ $('.wrapper').on({
   wheel: e => {
     const deltaY = e.originalEvent.deltaY;
     let direction = (deltaY > 0)
-    ? 'up'
-    : 'down'
+      ? 'up'
+      : 'down'
 
     scrollToSection(direction);
   },
@@ -177,7 +177,7 @@ $(document).on('keydown', e => {
 
 if (isMobile) {
   $(window).swipe({
-    swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+    swipe: function (event, direction, distance, duration, fingerCount, fingerData) {
       scrollToSection(direction)
     }
   })
@@ -253,6 +253,20 @@ $('[data-scroll-to]').on('click touchstar', e => {
 })
 
 
-// solor fixed menu
+// main menu phones 
 
+const burgerMenu = $('.nav');
 
+$('.burger__menu-trigger').on('click ', e => {
+  e.preventDefault();
+
+  burgerMenu.addClass('nav__active');
+
+});
+
+// $(document).on('click', function (e) {
+//   const $this = $(e.target);
+//   if (!$this.closest('.nav__list').length) {
+//     burgerMenu.removeClass('nav__active');
+//   }
+// });
