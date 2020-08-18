@@ -79,12 +79,15 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    // justify-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
     align-items: center;
 }
 
 .trigger__text {
     width: 0;
+    text-align: center;
 }
 
 .menu__bar-item_active {

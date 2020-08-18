@@ -59,17 +59,24 @@
 }
 
 .phones__button-name {
+    font-family: 'Gagalin', Helvetica, sans-serif;
     color: #fff;
     text-align: center;
     font-weight: bold;
     width: 50%;
     margin-bottom: rem(30px);
+    font-size: rem(24px);
 }
 
 .reviews__hover-text {
     margin-top: rem(30px);
     margin-bottom: rem(20px);
     margin-left: rem(20px);
+    margin-right: rem(20px);
+    width: 90%;
+    height: 40%;
+    overflow: hidden;
+    text-align: center;
 }
 
 .phones__button {

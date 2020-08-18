@@ -24,9 +24,16 @@
     width: 100%;
 }
 
-.footer__col-right,
-.footer__col-left {
-    width: 50%;
+
+.footer__col {
+    &-left {
+        width: 60%;
+    }
+
+    &-right {
+        width: 40%;
+    }
+    
 }
 
 .footer__phone {
@@ -38,8 +45,6 @@
     }
 }
 
-// доделать правую колонку
-
 .footer__social-list {
     display: flex;
     justify-content: flex-end;
@@ -47,55 +52,67 @@
 }
 
 .footer__social-item {
+    width: 30px;
+    height: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-right: 10px;
+
+    &_vk {
+        width: 23px;
+        height: 13px;
+    }
+    
+    &_fb {
+        width: 20px;
+        height: 20px;
+    }
+
+    &_inst {
+        width: 20px;
+        height: 20px;
+    }
+
+    &_tw {
+        width: 20px;
+        height: 16px;
+    }
 }
 
 .footer__social-link {
-    background: url('../img/sprite-social.png');
-    width: rem(25px);
-    height: rem(25px);
+    width: 100%;
+    height: 100%;
     display: block;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .footer__social-link_vk {
-    background-position: 0 0;
-    height: rem(13px);
-
+    background: url('../img/sprite-vk.png');
     &:hover {
-        background-position: 0 bottom;
+        background-position: 0 -50px;
     }
 }
 
 .footer__social-link_fb {
-    background-position: -50px 0;
-    height: rem(20px);
-    width: rem(20px);
-
+    background: url('../img/sprite-fb.png');
     &:hover {
-        background-position: rem(-50px) bottom;
+        background-position: 0 -50px;
     }
 }
 
 .footer__social-link_inst {
-    background-position: rem(-100px) 0;
-    height: rem(20px);
-    width: rem(20px);
-
+    background: url('../img/sprite-inst.png');
     &:hover {
-        background-position: 0 bottom;
+        background-position: 0 -50px;
     }
 }
 
 .footer__social-link_tw {
-    background-position: rem(-150px) 0;
-    height: rem(16px);
-    width: rem(20px);
-
+    background: url('../img/sprite-tw.png');
     &:hover {
-        background-position: 0 bottom;
+        background-position: 0 -50px;
     }
 }
 
