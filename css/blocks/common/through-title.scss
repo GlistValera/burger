@@ -53,7 +53,7 @@ $yellow: #f9b43b;
 
     &_lineheight {
         line-height: 1em;
-        margin-bottom: 50px;
+        margin-bottom: 35px;
 
         @include tablets {
             width: 50%;
@@ -62,8 +62,11 @@ $yellow: #f9b43b;
     
     &_phones {
         @include phones {
-            width: 100%;
+            width: 50%;
             margin-bottom: rem(40px);
+            font-size: 35px;
+            margin-left: 0;
+            margin-top: 35px;
         }
     }
 

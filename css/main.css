@@ -13,7 +13,7 @@
   background-color: transparent;
 }
 .button_phones {
-  padding: 7px 8px;
+  padding: 8px 6px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -51,7 +51,7 @@
 }
 .through-title_lineheight {
   line-height: 1em;
-  margin-bottom: 50px;
+  margin-bottom: 35px;
 }
 @media screen and (max-width: 798px) {
   .through-title_lineheight {
@@ -60,8 +60,11 @@
 }
 @media screen and (max-width: 480px) {
   .through-title_phones {
-    width: 100%;
+    width: 50%;
     margin-bottom: rem(40px);
+    font-size: 35px;
+    margin-left: 0;
+    margin-top: 35px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1100,6 +1103,11 @@ footer {
   width: 80px;
   position: relative;
 }
+@media screen and (max-width: 480px) {
+  .trigger {
+    width: 60px;
+  }
+}
 
 .trigger_veg {
   background: url(../img/menu-veg-bg.jpg) center center no-repeat;
@@ -1145,7 +1153,6 @@ footer {
 }
 
 .trigger__text {
-  width: 0;
   text-align: center;
 }
 
