@@ -255,18 +255,18 @@ $('[data-scroll-to]').on('click touchstar', e => {
 
 // main menu phones 
 
-const burgerMenu = $('.nav');
+const burgerMenu = $('.burger-menu');
 
-$('.burger__menu-trigger').on('click ', e => {
+$('.burger__menu-trigger').on('click touchstart', e => {
   e.preventDefault();
 
   burgerMenu.addClass('nav__active');
 
 });
 
-// $(document).on('click', function (e) {
-//   const $this = $(e.target);
-//   if (!$this.closest('.nav__list').length) {
-//     burgerMenu.removeClass('nav__active');
-//   }
-// });
+$('.cross__link').on('click touchstart', e => {
+  e.preventDefault();
+
+  burgerMenu.removeClass('nav__active');
+
+});

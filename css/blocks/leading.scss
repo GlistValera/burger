@@ -27,11 +27,7 @@
     }
 }
 
-.nav__active {
-    @include phones {
-        display: flex;
-    }
-}
+
 .nav__list {
     display: flex;
 
@@ -167,3 +163,82 @@
     transform: rotate(-45deg);
 }
 
+.burger-menu {
+    position: fixed;
+    top: 100%;
+    // top: 0;
+    // left: 999999px;
+    z-index: 99999;
+    height: 100%;
+    width: 100%;
+    background: rgba(#000, 0.9);
+    // opacity: 0;
+    overflow: hidden;
+    height: 100%;
+    transition: 1s;
+}
+
+.burger-menu__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo__pic {
+    margin-left: 24px;
+}
+
+.burger-menu__content {
+    display: flex;
+    height: 100%;
+}
+
+.burger-menu__nav {
+    margin: auto;
+    // text-align: center;
+}
+
+.burger-menu__nav-list {
+    text-align: center;
+}
+
+.burger-menu__nav-item {
+    position: relative;
+    margin-bottom: 20px;
+    &::after {
+        content: "";
+        width: 5px;
+        height: 5px;
+        background: #fff;
+        display: block;
+        border-radius: 50%;
+        margin-right: 0;
+        position: absolute;
+        top: 30px;
+        left: 65px;
+    }
+
+    &:last-child {
+        &::after {
+            display: none;
+        }
+    }
+}
+
+.burger-menu__nav-link {
+    font-family: 'Gagalin', Helvetica, sans-serif;
+    color: #fff;
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+
+.cross__pic {
+    width: 20px;
+    height: 20px;
+    margin-right: 36px;
+    margin-top: 5px;
+}
+
+.nav__active {
+    top: 0;
+}
